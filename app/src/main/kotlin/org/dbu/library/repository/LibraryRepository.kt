@@ -12,6 +12,7 @@ interface LibraryRepository {
     fun addPatron(patron: Patron): Boolean
     fun findPatron(id: String): Patron?
     fun updatePatron(patron: Patron)
+    fun getAllPatrons(): List<Patron>
 
     fun getAllBooks(): List<Book>
 }
